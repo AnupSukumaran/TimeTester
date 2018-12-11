@@ -12,9 +12,12 @@
 		6F1457DD21BFCDF700F8D382 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1457DB21BFCDF600F8D382 /* Main.storyboard */; };
 		6F1457DF21BFCE0F00F8D382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1457DE21BFCE0F00F8D382 /* Assets.xcassets */; };
 		6F1457E221BFCE0F00F8D382 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1457E021BFCE0F00F8D382 /* LaunchScreen.storyboard */; };
+		6F1457EA21BFCF2400F8D382 /* TrueTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1457E921BFCF2400F8D382 /* TrueTime.framework */; };
+		8E28C327F4016A51AE968333 /* Pods_TimeTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC01903088B07130BEB9869D /* Pods_TimeTester.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B19BBCD80F04CDE87112D73 /* Pods-TimeTester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTester.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeTester/Pods-TimeTester.release.xcconfig"; sourceTree = "<group>"; };
 		6F1457D421BFCDF500F8D382 /* TimeTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1457D721BFCDF500F8D382 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F1457D921BFCDF600F8D382 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		6F1457DE21BFCE0F00F8D382 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F1457E121BFCE0F00F8D382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F1457E321BFCE0F00F8D382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F1457E921BFCF2400F8D382 /* TrueTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TrueTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E151946F31A009928E2BF0 /* Pods-TimeTester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeTester/Pods-TimeTester.debug.xcconfig"; sourceTree = "<group>"; };
+		CC01903088B07130BEB9869D /* Pods_TimeTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F1457EA21BFCF2400F8D382 /* TrueTime.framework in Frameworks */,
+				8E28C327F4016A51AE968333 /* Pods_TimeTester.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1242BBE53981A3D46384543A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80E151946F31A009928E2BF0 /* Pods-TimeTester.debug.xcconfig */,
+				2B19BBCD80F04CDE87112D73 /* Pods-TimeTester.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6F1457CB21BFCDF400F8D382 = {
 			isa = PBXGroup;
 			children = (
 				6F1457D621BFCDF500F8D382 /* TimeTester */,
 				6F1457D521BFCDF500F8D382 /* Products */,
+				1242BBE53981A3D46384543A /* Pods */,
+				C044346517090880358313A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +83,15 @@
 			path = TimeTester;
 			sourceTree = "<group>";
 		};
+		C044346517090880358313A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F1457E921BFCF2400F8D382 /* TrueTime.framework */,
+				CC01903088B07130BEB9869D /* Pods_TimeTester.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F1457E621BFCE0F00F8D382 /* Build configuration list for PBXNativeTarget "TimeTester" */;
 			buildPhases = (
+				9262F8D0456A042C079C248C /* [CP] Check Pods Manifest.lock */,
 				6F1457D021BFCDF500F8D382 /* Sources */,
 				6F1457D121BFCDF500F8D382 /* Frameworks */,
 				6F1457D221BFCDF500F8D382 /* Resources */,
+				6462CD5296C70861962CAC56 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +159,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6462CD5296C70861962CAC56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TimeTester/Pods-TimeTester-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/TrueTime/TrueTime.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TrueTime.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeTester/Pods-TimeTester-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9262F8D0456A042C079C248C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeTester-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6F1457D021BFCDF500F8D382 /* Sources */ = {
@@ -280,6 +351,7 @@
 		};
 		6F1457E721BFCE0F00F8D382 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80E151946F31A009928E2BF0 /* Pods-TimeTester.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +370,7 @@
 		};
 		6F1457E821BFCE0F00F8D382 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B19BBCD80F04CDE87112D73 /* Pods-TimeTester.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
